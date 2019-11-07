@@ -1,0 +1,257 @@
+/*BUTTON*/
+.nav-toogle {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    background-color: whitesmoke;
+    width: 100%;
+    margin-top: 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.button{
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+.about {
+    margin-top: 100px;
+}
+
+.about h2 {
+    color: #666;
+    font-weight: bold;
+}
+
+.about hr {
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+.about p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.greetings {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background-image: url('../img/bkg-profile.jpg');
+    z-index: 1;
+}
+
+.greetings .content {
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 12, 80, 0.445);
+    z-index: 5;
+}
+
+.greetings .container {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.greetings .foto {
+    margin-top: 80px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.7);
+    padding: 2px;
+    margin-bottom: 5px
+}
+
+.greetings h4 {
+    color: yellowgreen;
+    margin-top: 50px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-family: courgette;
+}
+
+.greetings i {
+    margin-bottom: 30px;
+    width: auto;
+    height: auto;
+    color: rgb(145, 142, 142);
+    font-size: 20px;
+}
+
+/*JUMBOTRON*/
+.jumbotron {
+    background-image: url(../img/jumbotron-bg.jpg);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron h1 {
+    font-family: courgette;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 58%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+/* INFO PANEL*/
+.info-panel{
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -80px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.info-panel img{
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #acacac;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+/* WORKINGSPACE */
+.workingspace {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.workingspace h2 {
+    color: #666;
+    font-weight: bold;
+}
+
+.workingspace h3 {
+    font-size: 40px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.workingspace p {
+    font-size: 18px;
+    color: #1d1b1b;
+    font-weight: 200;
+    margin: 30px 0;
+}
+
+.workingspace hr {
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+.footer {
+    padding: 2px;
+    margin-top: 0px;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.footer p {
+    color: #acacac;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: roboto;
+}
+
+
+/* NAVBAR */
+.navbar-brand{
+    font-family: Viga;
+    font-size: 32px;
+}
+
+/* Dekstop Version */
+@media (min-width: 992px) {
+
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.7);
+        margin-top: 40px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar-brand, .nav-link {
+        color: whitesmoke !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    
+    }
+    
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom:3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom:  5px;
+        margin-bottom: -8px; 
+    }
+
+    .jumbotron {
+        margin-top: -40px;
+        height: 640px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+
+    .workingspace {
+        text-align: left;
+    }
+
+    .greetings i {
+        text-align: right;
+        font-size: 25px;
+    }
+
+    .about p {
+        text-align: justify;
+    }
+    
+}
+
